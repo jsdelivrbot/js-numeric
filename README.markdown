@@ -13,5 +13,5 @@ Limit value for html input element.
 * 2013 rchockxm (rchockxm.silver@gmail.com)
 
 <h2><a name="credits" class="anchor" href="#credits"><span class="mini-icon mini-icon-link"></span></a>CREDITS</h2>
-* Myerweb - css stylesheet
+* Myerweb - css stylesheet <a href="http://meyerweb.com/eric/tools/css/reset/">Link</a>
 
