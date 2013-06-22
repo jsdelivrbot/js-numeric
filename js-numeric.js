@@ -27,14 +27,14 @@ function NumericLimits(sender, limit_number) {
             sender.focus();
             var c_r = document.selection.createRange();
             var c_re = sender.createTextRange();
-            var c_rc =c_re.duplicate();
-            c_re.moveToBookmark(c_r.getBookmark);
+            var c_rc = c_re.duplicate();
+            c_re.moveToBookmark(c_r.getBookmark());
             c_rc.setEndPoint("EndToStart", c_re);
             user_force_pos = c_rc.text.length;
         }
     }
 
-    var KeyCode = (window.event) ? event.which : event.keyCode;
+    var KeyCode = event.keyCode;
     if (KeyCode >= 48 && KeyCode <= 57) {
         var new_value = parseInt(KeyCode - 48);
         var old_value = sender.value;
