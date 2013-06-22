@@ -6,7 +6,7 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
  
-function input_numeric_keypress(sender, limit_number) {
+function NumericLimits(sender, limit_number) {
     var ret = false;
     var user_select = (window.getSelection) ? window.getSelection() : "";
     if (user_select == "") {
