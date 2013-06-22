@@ -8,14 +8,15 @@
 <meta name="description" content="input numeric limit" />
 <meta name="author" content="rchockxm" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="style.css" />
+<link type="text/css" rel="stylesheet" href="style.css" />
 <script type="text/javascript" src="js-numeric.js"></script>
 </head>
 
 <body>
 <form id="form">
     <label for="numeric ">Numeric</label>
-    <input type="text" name="numeric" id="numeric" placeholder="numeric" onkeypress="return input_numeric_keypress(this, 100);" />
+    <input type="text" name="numeric" id="numeric" placeholder="numeric (100)" onkeypress="return NumericLimits(this, 100);" />
+    <input type="text" name="numeric" id="numeric" placeholder="numeric (1000)" onkeypress="return NumericLimits(this, 1000);" />
     <input type="submit" value="Enter" />
 </form>
 </body>
