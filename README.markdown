@@ -7,6 +7,8 @@ Javascript numeric limit input library
 
 Limit value for html input element.
 
+<img src="http://i.imgur.com/EaujkKq.jpg" />
+
 <h2><a name="about" class="anchor" href="#about"><span class="mini-icon mini-icon-link"></span></a>CHANGELOG</h2>
 
 <h2><a name="author" class="anchor" href="#author"><span class="mini-icon mini-icon-link"></span></a>AUTHOR</h2>
