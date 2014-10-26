@@ -13,10 +13,7 @@ Limit value for html input element.
 
 ```html
 <script type="text/javascript" src="js-numeric.js"></script>
-<div id="OrgChart"></div>
-<script>
 <input type="text" name="numeric1" id="numeric1" placeholder="numeric (10)" onkeypress="return NumericLimits(this, 10);" />
-</script>
 ```
 
 <h2><a name="changelog" class="anchor" href="#about"><span class="mini-icon mini-icon-link"></span></a>Changelog</h2>
