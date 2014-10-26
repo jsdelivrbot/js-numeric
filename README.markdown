@@ -9,11 +9,11 @@ Limit value for html input element.
 
 <img src="http://i.imgur.com/EaujkKq.jpg" />
 
-<h2><a name="about" class="anchor" href="#about"><span class="mini-icon mini-icon-link"></span></a>CHANGELOG</h2>
+<h2><a name="about" class="anchor" href="#about"><span class="mini-icon mini-icon-link"></span></a>Changelog</h2>
 
-<h2><a name="author" class="anchor" href="#author"><span class="mini-icon mini-icon-link"></span></a>AUTHOR</h2>
+<h2><a name="author" class="anchor" href="#author"><span class="mini-icon mini-icon-link"></span></a>Author</h2>
 * 2013 rchockxm (rchockxm.silver@gmail.com)
 
-<h2><a name="credits" class="anchor" href="#credits"><span class="mini-icon mini-icon-link"></span></a>CREDITS</h2>
+<h2><a name="credits" class="anchor" href="#credits"><span class="mini-icon mini-icon-link"></span></a>Credits</h2>
 * Myerweb - css stylesheet <a href="http://meyerweb.com/eric/tools/css/reset/">Link</a>
 
