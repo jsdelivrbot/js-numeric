@@ -9,7 +9,17 @@ Limit value for html input element.
 
 <img src="http://i.imgur.com/EaujkKq.jpg" />
 
-<h2><a name="about" class="anchor" href="#about"><span class="mini-icon mini-icon-link"></span></a>Changelog</h2>
+<h2><a name="usage" class="anchor" href="#about"><span class="mini-icon mini-icon-link"></span></a>Usage</h2>
+
+```html
+<script type="text/javascript" src="js-numeric.js"></script>
+<div id="OrgChart"></div>
+<script>
+<input type="text" name="numeric1" id="numeric1" placeholder="numeric (10)" onkeypress="return NumericLimits(this, 10);" />
+</script>
+```
+
+<h2><a name="changelog" class="anchor" href="#about"><span class="mini-icon mini-icon-link"></span></a>Changelog</h2>
 
 <h2><a name="author" class="anchor" href="#author"><span class="mini-icon mini-icon-link"></span></a>Author</h2>
 * 2013 rchockxm (rchockxm.silver@gmail.com)
