@@ -13,11 +13,25 @@
 </head>
 
 <body>
+<script language="javascript">
+var limit10 = function(sender, global_value, limit_number) {
+    alert("Error: number " + global_value + " cant over or less " + limit_number + "!!");
+};
+
+var limit100 = function(sender, global_value, limit_number) {
+    alert("Error: number " + global_value + " cant over or less " + limit_number + "!!");
+};
+
+var limit1000 = function(sender, global_value, limit_number) {
+    alert("Error: number " + global_value + " cant over or less " + limit_number + "!!");
+};
+</script>
+
 <form id="form">
     <label for="numeric ">Numeric</label>
-    <input type="text" name="numeric1" id="numeric1" placeholder="numeric (10)" onkeypress="return NumericLimits(this, 10);" />
-    <input type="text" name="numeric2" id="numeric2" placeholder="numeric (100)" onkeypress="return NumericLimits(this, 100);" />
-    <input type="text" name="numeric3" id="numeric3" placeholder="numeric (1000)" onkeypress="return NumericLimits(this, 1000);" />
+    <input type="text" name="numeric1" id="numeric1" placeholder="numeric (10)" onkeypress="return NumericLimits(this, 10, limit10);" />
+    <input type="text" name="numeric2" id="numeric2" placeholder="numeric (100)" onkeypress="return NumericLimits(this, 100, limit100);" />
+    <input type="text" name="numeric3" id="numeric3" placeholder="numeric (1000)" onkeypress="return NumericLimits(this, 1000, limit1000);" />
     <input type="submit" value="Enter" />
 </form>
 </body>
