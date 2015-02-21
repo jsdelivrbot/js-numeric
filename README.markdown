@@ -43,7 +43,7 @@ var limit10 = function(sender, global_value, limit_number) {
     var limit10 = new JsNumeric({
         target: document.getElementById("numeric1"),
         callback: function(sender, globalValue, limit){
-            alert("XD");
+            alert("Error input number. Please try again!");
         },
         limit: {
             max: 100,
