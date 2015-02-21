@@ -29,6 +29,31 @@ var limit10 = function(sender, global_value, limit_number) {
 };
 ```
 
+<h2><a name="v2" class="anchor" href="#v2"><span class="mini-icon mini-icon-link"></span></a>V2</h2>
+
+```html
+<form id="form">
+    <label for="numeric ">Numeric</label>
+    <input type="text" name="numeric1" id="numeric1" placeholder="numeric (10 ~ 100)" />
+    <input type="submit" value="Enter" />
+</form>
+
+<script language="javascript">
+(function() {
+    var limit10 = new JsNumeric({
+        target: document.getElementById("numeric1"),
+        callback: function(sender, globalValue, limit){
+            alert("XD");
+        },
+        limit: {
+            max: 100,
+            min: 10
+        }
+    });
+})();
+</script>
+```
+
 <h2><a name="changelog" class="anchor" href="#about"><span class="mini-icon mini-icon-link"></span></a>Changelog</h2>
 
 <h4>1.01</h4>
