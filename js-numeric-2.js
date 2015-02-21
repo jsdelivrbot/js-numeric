@@ -23,11 +23,18 @@ function JsNumeric(targetParams) {
         params.target = (typeof targetParams['target'] === "object") ? targetParams['target'] : params.target;
         params.callback = (typeof targetParams['callback'] === "function") ? targetParams['callback'] : params.callback;
         
-        var limit = (typeof targetParams['limit'] === "object") ? targetParams['limit'] : null;
-        
-        if (typeof limit === "object") {
+        if (typeof targetParams['limit'] === "object") {
             params.limit.max = (typeof limit['max'] === "number") ? limit['max'] : params.limit.max;
             params.limit.min = (typeof limit['min'] === "number") ? limit['min'] : params.limit.min;
+        }
+        
+        if (typeof targetParams['limit'] === "string") {
+            var limitStr = targetParams['limit'].split(",");
+            
+            if (limitStr.length == 2) {
+                params.limit.max = parseFloat(limitStr[1]);
+                params.limit.min = parseFloat(limitStr[0]);
+            }
         }
     }
     
@@ -92,10 +99,6 @@ function JsNumeric(targetParams) {
         if (typeof limit === "object") {
             numMax = (typeof limit['max'] === "number") ? parseFloat(limit.max) : numMax;
             numMin = (typeof limit['min'] === "number") ? parseFloat(limit.min) : numMin;
-        }
-        
-        if (typeof limit === "string") {
-            
         }
         
         var dwKeyCode = parseInt(window.event.keyCode);
