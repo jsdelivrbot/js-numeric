@@ -9,11 +9,19 @@ Limit value for html input element.
 
 <img src="http://i.imgur.com/EaujkKq.jpg" />
 
-<h2><a name="usage" class="anchor" href="#about"><span class="mini-icon mini-icon-link"></span></a>Usage</h2>
+<h2><a name="usage" class="anchor" href="#usage"><span class="mini-icon mini-icon-link"></span></a>Usage</h2>
 
 ```html
 <script type="text/javascript" src="js-numeric.js"></script>
 <input type="text" name="numeric1" id="numeric1" placeholder="numeric (10)" onkeypress="return NumericLimits(this, 10);" />
+```
+
+<h2><a name="callback" class="anchor" href="#callback"><span class="mini-icon mini-icon-link"></span></a>Callback</h2>
+
+```js
+var limit10 = function(sender, global_value, limit_number) {
+    alert("Error: number " + global_value + " cant over or less " + limit_number + "!!");
+};
 ```
 
 <h2><a name="changelog" class="anchor" href="#about"><span class="mini-icon mini-icon-link"></span></a>Changelog</h2>
