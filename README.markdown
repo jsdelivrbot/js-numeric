@@ -18,6 +18,10 @@ Limit value for html input element.
 
 <h2><a name="changelog" class="anchor" href="#about"><span class="mini-icon mini-icon-link"></span></a>Changelog</h2>
 
+<h4>1.01</h4>
+- Added callback function for limit alert.
+- Fixed some bugs.
+
 <h2><a name="author" class="anchor" href="#author"><span class="mini-icon mini-icon-link"></span></a>Author</h2>
 * 2013 rchockxm (rchockxm.silver@gmail.com)
 
