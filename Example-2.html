@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>js-numeric by Rchockxm</title>
+<meta charset="utf-8" />
+<meta name="keywords" content="html5, javascript, jquery, css3" />
+<meta name="description" content="input numeric limit" />
+<meta name="author" content="rchockxm" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="js-numeric-2.js"></script>
+</head>
+
+<body>
+
+<form id="form">
+    <label for="numeric ">Numeric</label>
+    <input type="text" name="numeric1" id="numeric1" placeholder="numeric (10 ~ 100)" />
+    <input type="submit" value="Enter" />
+</form>
+
+<script language="javascript">
+(function() {
+    var limit10 = new JsNumeric({
+        target: document.getElementById("numeric1"),
+        callback: function(sender, globalValue, limit){
+            alert("XD");
+        },
+        limit: {
+            max: 100,
+            min: 10
+        }
+    });
+})();
+</script>
+
+</body>
+
+</html>
