@@ -16,6 +16,11 @@ Limit value for html input element.
 <input type="text" name="numeric1" id="numeric1" placeholder="numeric (10)" onkeypress="return NumericLimits(this, 10);" />
 ```
 
+```html
+<script type="text/javascript" src="js-numeric.js"></script>
+<input type="text" name="numeric1" id="numeric1" placeholder="numeric (10)" onkeypress="return NumericLimits(this, 10, limit10);" />
+```
+
 <h2><a name="callback" class="anchor" href="#callback"><span class="mini-icon mini-icon-link"></span></a>Callback</h2>
 
 ```js
