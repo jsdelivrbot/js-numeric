@@ -19,7 +19,7 @@ function JsNumeric(targetParams) {
         }
     };
     
-    if (typeof targetParams === "object") {
+    if (typeof targetParams === "object" && targetParams !== null) {
         params.target = (typeof targetParams['target'] === "object") ? targetParams['target'] : params.target;
         params.callback = (typeof targetParams['callback'] === "function") ? targetParams['callback'] : params.callback;
         
@@ -38,14 +38,14 @@ function JsNumeric(targetParams) {
         }
     }
     
-    if (typeof params.target === "object") {
+    if (typeof params.target === "object" && params.target !== null) {
         if (typeof params.target.addEventListener === "function") {
             params.target.addEventListener("keypress", function(){
                 var result = gThis.setLimit(params.target, params.limit, params.callback);
             });
         }
         else {
-            if (typeof params.target.attachEvent === "object") {
+            if (typeof params.target.attachEvent === "object" && params.target.attachEvent !== null) {
                 params.target.attachEvent("onkeypress", function(){
                     var result = gThis.setLimit(params.target, params.limit, params.callback);
                 });
