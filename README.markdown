@@ -54,6 +54,8 @@ var limit10 = function(sender, global_value, limit_number) {
 </script>
 ```
 
+You can view a demo of this <a href="http://jsfiddle.net/gh/get/library/pure/rchockxm/js-numeric/tree/master/demo">here</a>.
+
 <h2><a name="changelog" class="anchor" href="#about"><span class="mini-icon mini-icon-link"></span></a>Changelog</h2>
 
 <h4>1.01</h4>
