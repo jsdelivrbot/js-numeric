@@ -1,0 +1,23 @@
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/rchockxm/js-numeric/master/style.css" />
+<script language="javascript" src="https://cdn.rawgit.com/rchockxm/js-numeric/master/js-numeric-2.js"></script>
+
+<form id="form">
+    <label for="numeric ">Numeric</label>
+    <input type="text" name="numeric1" id="numeric1" placeholder="numeric (10 ~ 100)" />
+    <input type="submit" value="Enter" />
+</form>
+
+<script language="javascript">
+(function() {
+    var limit10 = new JsNumeric({
+        target: document.getElementById("numeric1"),
+        callback: function(sender, globalValue, limit){
+            alert("Error input number. Please try again!");
+        },
+        limit: {
+            max: 100,
+            min: 10
+        }
+    });
+})();
+</script>

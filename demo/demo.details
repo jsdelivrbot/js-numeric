@@ -1,0 +1,7 @@
+name: js-orgChart
+description: Organizational Chart JavaScript Library
+authors:
+  - Rchockxm
+resources:
+  - https://cdn.rawgit.com/rchockxm/js-numeric/master/js-numeric-2.js
+  - https://cdn.rawgit.com/rchockxm/js-numeric/master/style.css
