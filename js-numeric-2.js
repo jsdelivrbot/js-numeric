@@ -24,8 +24,8 @@ function JsNumeric(targetParams) {
         params.callback = (typeof targetParams['callback'] === "function") ? targetParams['callback'] : params.callback;
         
         if (typeof targetParams['limit'] === "object") {
-            params.limit.max = (typeof limit['max'] === "number") ? limit['max'] : params.limit.max;
-            params.limit.min = (typeof limit['min'] === "number") ? limit['min'] : params.limit.min;
+            params.limit.max = (typeof params.limit['max'] === "number") ? params.limit['max'] : params.limit.max;
+            params.limit.min = (typeof params.limit['min'] === "number") ? params.limit['min'] : params.limit.min;
         }
         
         if (typeof targetParams['limit'] === "string") {
