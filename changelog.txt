@@ -1,0 +1,4 @@
+Version 1.01
+
+- Added callback function for limit alert.
+- Fixed some bugs.
